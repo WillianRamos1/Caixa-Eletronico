@@ -33,8 +33,8 @@ namespace Caixa
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.btnDisponivel = new System.Windows.Forms.Button();
             this.btnProsseguir = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -92,6 +92,16 @@ namespace Caixa
             this.panel1.Size = new System.Drawing.Size(776, 339);
             this.panel1.TabIndex = 3;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(268, 219);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(243, 17);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Digite apenas valores terminados em 0.";
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btnDisponivel);
@@ -101,16 +111,6 @@ namespace Caixa
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(776, 339);
             this.panel2.TabIndex = 4;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(260, 221);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(251, 17);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Digite valores terminados apenas com 0.";
             // 
             // btnDisponivel
             // 
@@ -157,7 +157,7 @@ namespace Caixa
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "frmMenu";
-            this.Text = "Menu";
+            this.Text = "Tela de Menu";
             this.Load += new System.EventHandler(this.frmMenu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

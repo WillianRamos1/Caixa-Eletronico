@@ -18,7 +18,6 @@ namespace Negocios
 			{
 				notas.CriarNota100(notas.MostrarNota100() + 1);
 				notas.AcharValorRestante(notas.MostrarRestante() - 100);
-
 			}
 
 			while (notas.MostrarRestante() >= 50)

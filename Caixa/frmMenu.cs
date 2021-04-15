@@ -11,7 +11,6 @@ using Negocios;
 using Dados;
 
 
-
 namespace Caixa
 {
     public partial class frmMenu : Form
@@ -34,15 +33,12 @@ namespace Caixa
         {
 
         }
-
         private void btnProsseguir_Click(object sender, EventArgs e)
         {
             Notas notas = new Notas();
             Saque saque = new Saque();
 
             int.TryParse(txtValor.Text, out var valor);
-
-            
             notas = saque.sacar((valor));
                 
                 if (notas == null)
@@ -61,8 +57,6 @@ namespace Caixa
         }
         public void button1_Click(object sender, EventArgs e)
         {
-            if (Index < listPanel.Count - 1) listPanel[++Index].BringToFront();
-
             int.TryParse(txtValor.Text, out var valor);
 
             if (valor > 1000)
@@ -71,6 +65,12 @@ namespace Caixa
             }
             else if (valor < 10)
                 MessageBox.Show("O Valor minimo para saque é de R$ 10,00");
+
+
+            if (valor >= 10 & valor <= 1000)
+            {
+                if (Index < listPanel.Count - 1) listPanel[++Index].BringToFront();
+            }
         }
         private void button2_Click(object sender, EventArgs e)
         {
