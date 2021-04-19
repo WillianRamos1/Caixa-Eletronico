@@ -14,6 +14,7 @@ namespace Dados
     
     public partial class Cedulas
     {
-        public string Cedulas_Disponiveis { get; set; }
+        public string Notas { get; set; }
+        public Nullable<int> Quantidade { get; set; }
     }
 }
